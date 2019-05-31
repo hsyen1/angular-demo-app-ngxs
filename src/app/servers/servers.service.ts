@@ -1,5 +1,8 @@
+import {Observable} from 'rxjs';
+import {IServer} from '../model/IServer';
+
 export class ServersService {
-  private servers = [
+  private servers: IServer[] = [
     {
       id: 1,
       name: 'Productionserver',
@@ -17,7 +20,7 @@ export class ServersService {
     }
   ];
 
-  getServers() {
+  getServers(){
     return this.servers;
   }
 
